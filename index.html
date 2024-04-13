@@ -4,59 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tax Calculator</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <title>Tax Calculator</title>
 </head>
 
 <body>
     <div class="container">
         <h1>Tax Calculator</h1>
         <div class="input-section">
+
+            <label for="gross-income">Gross Income:</label>
             <div class="tooltip">
-                <label for="gross-income">Gross Income:</label>
-                <span class="tooltiptext">Total income before deductions, taxes, or other adjustments.</span>
+
+                <span class="tool">Total income before deductions, taxes, or other adjustments.</span>
                 <div class="question-mark">?</div>
             </div>
-            <input type="number" id="gross-income" placeholder="Enter your gross income" min="0" step="any">
+
+            <input type="text" id="gross-income" placeholder="Enter your gross income">
+            <span class="error-icon" id="gross-income-error">!</span>
+            <div class="tooltip-text" id="gross-income-tooltip">Please enter only numbers</div>
+        </div>
+
+
+
+        <div class="input-section">
+            <label for="extra-income">Extra Income:</label>
+            <div class="tooltip">
+
+                <span class="tool">Additional income from sources other than regular employment.</span>
+                <div class="question-mark">?</div>
+            </div>
+            <input type="text" id="extra-income" placeholder="Enter your extra income">
+            <span class="error-icon" id="extra-income-error">!</span>
+            <div class="tooltip-text" id="extra-income-tooltip">Please enter only numbers</div>
+        </div>
+
+        <div class="input-section">
+            <label for="deductions">Enter total applicable deductions:</label>
+            <div class="tooltip">
+                <span class="tool">Total deductions in numbers e.g., 50000.</span>
+                <div class="question-mark">?</div>
+            </div>
+
+            <input id="deductions" placeholder="Total deductions">
+            <span class="error-icon" id="deductions-error">!<span class="tool">Enter the total deduction
+                    amount</span></span>
+            <div class="tooltip-text" id="deductions-error-tooltip">Please enter only numbers</div>
         </div>
         <div class="input-section">
+            <label for="age-group">Age Group:</label>
+
             <div class="tooltip">
-                <label for="extra-income">Extra Income:</label>
-                <span class="tooltiptext">Additional income from sources other than regular employment.</span>
+                <span class="tool">Select the age group that you belong to.</span>
                 <div class="question-mark">?</div>
             </div>
-            <input type="number" id="extra-income" placeholder="Enter your extra income" min="0" step="any">
-        </div>
-        <div class="input-section">
-            <div class="tooltip">
-                <label for="extra-income">Enter total applicable deductions:</label>
-                <span class="tooltiptext">total deductions in numbers eg 50000.</span>
-                <div class="question-mark">?</div>
-            </div>
-            <input type="number" id="deductions" placeholder="Total deductions" min="0" step="any">
-        </div>
-        <div class="input-section">
-            <div class="tooltip">
-                <label for="age-group">Age Group:</label>
-                <span class="tooltiptext">Select the age group that you belong to.</span>
-                <div class="question-mark">?</div>
-            </div>
+
             <select id="age-group">
                 <option value="">Select Age Group</option>
                 <option value="18-40">less than 40</option>
                 <option value="41-59">more than 40 but less than 60 </option>
                 <option value="60">Over 60</option>
-                
             </select>
-
+            <span class="error-icon">!</span>
         </div>
-        <button onclick="calculateTax()">Calculate Tax</button>
+        <button onclick="openModal()">Calculate Tax</button>
 
-        <div id="result"></div>
-        <div id="result1"></div>
     </div>
-   
+
+    <div id="myModal" class="modal">
+
+
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="result"></div>
+        </div>
+
+    </div>
+
 </body>
 
 </html>
