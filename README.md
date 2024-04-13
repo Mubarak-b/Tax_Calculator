@@ -5,7 +5,10 @@ tax calculator based on user input with validation
 2.
 ![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/a0a95d28-7cdb-4949-aebd-45cb0ea41171)
 3.
-![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/95551c31-da0f-4876-af08-d11caa41f345)
+![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/2d58815c-37c5-49d4-9559-b695edff4c1e)
+4.
+![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/a720d921-ac70-4612-aac3-ffb9128728ee)
+
 
 
 
