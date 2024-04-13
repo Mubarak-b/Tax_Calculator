@@ -1,3 +1,12 @@
 # Tax_Calculator
-tax calculator based on user input
-![Screenshot 2024-04-11 183751](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/26193399-deea-49d6-8613-26898eb2912d)
+tax calculator based on user input with validation
+1.
+![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/5c14509f-d70a-42d3-af3f-74883a1e778f)
+2.
+![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/a0a95d28-7cdb-4949-aebd-45cb0ea41171)
+3.
+![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/95551c31-da0f-4876-af08-d11caa41f345)
+
+
+
+
