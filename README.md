@@ -17,7 +17,18 @@ tax calculator based on user input with validation
 4.
 ![image](https://github.com/Mubarak-b/Tax_Calculator/assets/155418504/a720d921-ac70-4612-aac3-ffb9128728ee)
 
+...
+5. To run this project on your local machine follow the below steps:
 
+
+1. Clone the Repository:
+   git clone https://github.com/Mubarak-b/Tax_Calculator.
+
+2. Navigate to the Project Directory:
+   cd <repository-name>
+   
+3.Open the Project in a Web Browser:
+  open the index.html
 
 
 
