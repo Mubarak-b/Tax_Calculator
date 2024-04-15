@@ -25,7 +25,7 @@ tax calculator based on user input with validation
    git clone https://github.com/Mubarak-b/Tax_Calculator.
 
 2. Navigate to the Project Directory:
-   cd <repository-name>
+   cd repository-name
    
 3.Open the Project in a Web Browser:
   open the index.html
