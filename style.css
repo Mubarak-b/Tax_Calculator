@@ -84,11 +84,10 @@ button:hover {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-color: transparent;
     border-radius: 50%;
     text-align: center;
     line-height: 20px;
-    font-size: 14px;
+    font-size: 18px;
     color: #fff;
     cursor: pointer;
     margin-left: 5px;
@@ -113,7 +112,6 @@ button:hover {
     left: 820px;
     opacity: 0;
     transition: opacity 0.3s;
-
 }
 
 .tool {
@@ -129,7 +127,6 @@ button:hover {
     bottom: 20px;
     opacity: 0;
     transition: opacity 0.3s;
-
 }
 
 .tooltip:hover .tool {
@@ -177,7 +174,7 @@ button:hover {
 }
 
 .modal-content {
-    background-color: #0c9487;
+    background-color: rgb(126, 204, 200);
     margin: 28% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -194,7 +191,67 @@ button:hover {
     font-weight: bold;
 }
 
-.close:hover{
+.close:hover {
     color: rgb(219, 4, 4);
     cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 30px auto;
+    }
+
+    input, button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    button {
+        margin: 20px 0;
+    }
+
+    .tooltip-text, .error-icon {
+        left: auto;
+        right: 10px;
+    }
+
+    .modal {
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+    }
+
+    .modal-content {
+        margin: 50% auto;
+        padding: 20px;
+        width: 90%;
+        max-height: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    input {
+        padding: 10px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    .question-mark, .tooltip, .tooltip-text, .error-icon {
+        font-size: 14px;
+    }
+
+    .modal-content {
+        margin: 40% auto;
+        padding: 15px;
+    }
 }
